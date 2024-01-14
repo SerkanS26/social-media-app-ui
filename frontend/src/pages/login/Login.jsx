@@ -3,6 +3,7 @@ import "./login.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 
+
 const Login = () => {
   alert("Click on Login button to navigate to Home page");
   const { login } = useContext(AuthContext);
