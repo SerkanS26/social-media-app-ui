@@ -9,7 +9,6 @@ import PlaceIcon from "@mui/icons-material/Place";
 import LanguageIcon from "@mui/icons-material/Language";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Language from "@mui/icons-material/Language";
 
 import Posts from "../../components/posts/Posts";
 
