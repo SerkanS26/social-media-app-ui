@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./login.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/authContext";
 
 const Login = () => {
+  alert("Click on Login button to navigate to Home page");
+  const { login } = useContext(AuthContext);
+
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    login();
+    navigate("/");
+  };
   return (
     <div className="login">
       <div className="card">
@@ -24,7 +35,7 @@ const Login = () => {
           <form>
             <input type="text" placeholder="Username" />
             <input type="password" placeholder="Password" />
-            <button>Login</button>
+            <button onClick={handleLogin}>Login</button>
           </form>
         </div>
       </div>
